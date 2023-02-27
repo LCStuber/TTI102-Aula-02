@@ -24,39 +24,39 @@ def início():
     if a == 0:
         exit()
     elif a == 1:
-        x = coletorDeNúmero("Digite o primeiro número da soma")
-        y = coletorDeNúmero("Digite o segundo número da soma")
+        x = coletorDeNúmero("Digite o primeiro número da soma\n")
+        y = coletorDeNúmero("Digite o segundo número da soma\n")
         print(f"O resultado da operação é: {Soma.soma(x,y)}")
     elif a == 2:
-        x = coletorDeNúmero("Digite o primeiro número da subtração")
-        y = coletorDeNúmero("Digite o segundo número da subtração")
+        x = coletorDeNúmero("Digite o primeiro número da subtração\n")
+        y = coletorDeNúmero("Digite o segundo número da subtração\n")
         print(f"O resultado da operação é: {Subtracao.subtracao(x,y)}")
     elif a == 3:
-        x = coletorDeNúmero("Digite o primeiro número da multiplicação")
-        y = coletorDeNúmero("Digite o segundo número da multiplicação")
+        x = coletorDeNúmero("Digite o primeiro número da multiplicação\n")
+        y = coletorDeNúmero("Digite o segundo número da multiplicação\n")
         print(f"O resultado da operação é: {Multiplicacao.multiplicacao(x,y)}")
     elif a == 4:
-        x = coletorDeNúmero("Digite o número da divisor")
+        x = coletorDeNúmero("Digite o número da divisor\n")
         ERRO = True
         while ERRO:
-            y = coletorDeNúmero("Digite o número da dividendo")
+            y = coletorDeNúmero("Digite o número da dividendo\n")
             if y == 0:
                 print("Digite um valor válido (diferente de 0)")
             else:
                 ERRO = False
         print(f"O resultado da operação é: {Divisao.divisao(x,y)}")
     elif a == 5:
-        x = coletorDeNúmero("Digite o número a ser elevado")
-        y = coletorDeNúmero("Digite a potência")
+        x = coletorDeNúmero("Digite o número a ser elevado\n")
+        y = coletorDeNúmero("Digite a potência\n")
         print(f"O resultado da operação é: {Potencia.potencia(x,y)}")
     elif a == 5:
-        x = coletorDeNúmero("Digite o número a ser elevado")
-        y = coletorDeNúmero("Digite a potência")
+        x = coletorDeNúmero("Digite o número a ser elevado\n")
+        y = coletorDeNúmero("Digite a potência\n")
         print(f"O resultado da operação é: {Potencia.potencia(x,y)}")
     elif a == 6:
         ERRO = True
         while ERRO:
-            x = coletorDeNúmero("Digite o número para extrair a raiz")
+            x = coletorDeNúmero("Digite o número para extrair a raiz\n")
             if x < 0:
                 print("Digite um valor válido (maior do que 0)")
             else:
